@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net45;net461</TargetFrameworks>
+    <Authors>Luis Eduardo Cochachi Chamorro</Authors>
+    <Company>Liiksoft</Company>
+    <Description>Help to use class System.Threading.Task.Parallel in .NET
+
+ParallelEx&lt;T&gt;, 
+ParallelEx&lt;T,T1&gt; 
+ParallelEx&lt;T,T1,T2&gt; 
+ParallelEx&lt;T,T1,T2,T3&gt; 
+ParallelEx&lt;T,T1,T2,T3,T4&gt; 
+ParallelEx&lt;T,T1,T2,T3,T4,T5&gt; 
+ParallelEx&lt;T,T1,T2,T3,T4,T5,T6&gt; 
+ParallelEx&lt;T,T1,T2,T3,T4,T5,T6,T7&gt;</Description>
+    <PackageTags>Parallel, ParallelEx</PackageTags>
+    <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageIcon>package.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vaetech.Data.ContentResult" Version="1.5.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\icons\package.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
