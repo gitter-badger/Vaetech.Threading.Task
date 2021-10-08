@@ -19,6 +19,8 @@ ParallelEx&lt;T,T1,T2,T3,T4,T5,T6,T7&gt;</Description>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageIcon>package.png</PackageIcon>
     <PackageIconUrl />
+    <PackageProjectUrl>https://github.com/cochachyLE-Eng/Vaetech.Threading.Task</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cochachyLE-Eng/Vaetech.Threading.Task</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
