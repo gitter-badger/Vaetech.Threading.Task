@@ -36,7 +36,7 @@ namespace Vaetech.Threading.Task
             if (processors == Processors.None)
                 processors = Processors.One;
 
-            var proceso = (int)processors == 0 ? 0 : Convert.ToInt32(list.Count / (int)processors);
+            var process = (int)processors == 0 ? 0 : Convert.ToInt32(list.Count / (int)processors);
 
             switch (processors)
             {
@@ -50,323 +50,323 @@ namespace Vaetech.Threading.Task
                 case Processors.Two:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), list.Count - (proceso * 1)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), list.Count - (process * 1)))
                         );
                     }
                     break;
                 case Processors.Three:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), list.Count - (proceso * 2)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), list.Count - (process * 2)))
                         );
                     }
                     break;
                 case Processors.Four:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), list.Count - (proceso * 3)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), list.Count - (process * 3)))
                         );
                     }
                     break;
                 case Processors.Five:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), list.Count - (proceso * 4)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), list.Count - (process * 4)))
                         );
                     }
                     break;
                 case Processors.Six:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), list.Count - (proceso * 5)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), list.Count - (process * 5)))
                         );
                     }
                     break;
                 case Processors.Seven:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), list.Count - (proceso * 6)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), list.Count - (process * 6)))
                         );
                     }
                     break;
                 case Processors.Eight:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), list.Count - (proceso * 7)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), list.Count - (process * 7)))
                         );
                     }
                     break;
                 case Processors.Nine:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), list.Count - (proceso * 8)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), list.Count - (process * 8)))
                         );
                     }
                     break;
                 case Processors.Ten:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), list.Count - (proceso * 9)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), list.Count - (process * 9)))
                         );
                     }
                     break;
                 case Processors.Eleven:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), list.Count - (proceso * 10)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), list.Count - (process * 10)))
                         );
                     }
                     break;
                 case Processors.Twelve:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), list.Count - (proceso * 11)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), list.Count - (process * 11)))
                         );
                     }
                     break;
                 case Processors.Thirteen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), list.Count - (proceso * 12)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), list.Count - (process * 12)))
                         );
                     }
                     break;
                 case Processors.Fourteen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), list.Count - (proceso * 13)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), list.Count - (process * 13)))
                         );
                     }
                     break;
                 case Processors.Fifteen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), proceso)),
-                            () => OnSendParameters(15, list.GetRange((proceso * 14), list.Count - (proceso * 14)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), process)),
+                            () => OnSendParameters(15, list.GetRange((process * 14), list.Count - (process * 14)))
                         );
                     }
                     break;
                 case Processors.Sixteen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), proceso)),
-                            () => OnSendParameters(15, list.GetRange((proceso * 14), proceso)),
-                            () => OnSendParameters(16, list.GetRange((proceso * 15), list.Count - (proceso * 15)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), process)),
+                            () => OnSendParameters(15, list.GetRange((process * 14), process)),
+                            () => OnSendParameters(16, list.GetRange((process * 15), list.Count - (process * 15)))
                         );
                     }
                     break;
                 case Processors.Seventeen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), proceso)),
-                            () => OnSendParameters(15, list.GetRange((proceso * 14), proceso)),
-                            () => OnSendParameters(16, list.GetRange((proceso * 15), proceso)),
-                            () => OnSendParameters(17, list.GetRange((proceso * 16), list.Count - (proceso * 16)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), process)),
+                            () => OnSendParameters(15, list.GetRange((process * 14), process)),
+                            () => OnSendParameters(16, list.GetRange((process * 15), process)),
+                            () => OnSendParameters(17, list.GetRange((process * 16), list.Count - (process * 16)))
                         );
                     }
                     break;
                 case Processors.Eighteen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), proceso)),
-                            () => OnSendParameters(15, list.GetRange((proceso * 14), proceso)),
-                            () => OnSendParameters(16, list.GetRange((proceso * 15), proceso)),
-                            () => OnSendParameters(17, list.GetRange((proceso * 16), proceso)),
-                            () => OnSendParameters(18, list.GetRange((proceso * 17), list.Count - (proceso * 17)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), process)),
+                            () => OnSendParameters(15, list.GetRange((process * 14), process)),
+                            () => OnSendParameters(16, list.GetRange((process * 15), process)),
+                            () => OnSendParameters(17, list.GetRange((process * 16), process)),
+                            () => OnSendParameters(18, list.GetRange((process * 17), list.Count - (process * 17)))
                         );
                     }
                     break;
                 case Processors.Nineteen:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), proceso)),
-                            () => OnSendParameters(15, list.GetRange((proceso * 14), proceso)),
-                            () => OnSendParameters(16, list.GetRange((proceso * 15), proceso)),
-                            () => OnSendParameters(17, list.GetRange((proceso * 16), proceso)),
-                            () => OnSendParameters(18, list.GetRange((proceso * 17), proceso)),
-                            () => OnSendParameters(19, list.GetRange((proceso * 18), list.Count - (proceso * 18)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), process)),
+                            () => OnSendParameters(15, list.GetRange((process * 14), process)),
+                            () => OnSendParameters(16, list.GetRange((process * 15), process)),
+                            () => OnSendParameters(17, list.GetRange((process * 16), process)),
+                            () => OnSendParameters(18, list.GetRange((process * 17), process)),
+                            () => OnSendParameters(19, list.GetRange((process * 18), list.Count - (process * 18)))
                         );
                     }
                     break;
                 case Processors.Twenty:
                     {
                         Parallel.Invoke(
-                            () => OnSendParameters(1, list.GetRange((proceso * 0), proceso)),
-                            () => OnSendParameters(2, list.GetRange((proceso * 1), proceso)),
-                            () => OnSendParameters(3, list.GetRange((proceso * 2), proceso)),
-                            () => OnSendParameters(4, list.GetRange((proceso * 3), proceso)),
-                            () => OnSendParameters(5, list.GetRange((proceso * 4), proceso)),
-                            () => OnSendParameters(6, list.GetRange((proceso * 5), proceso)),
-                            () => OnSendParameters(7, list.GetRange((proceso * 6), proceso)),
-                            () => OnSendParameters(8, list.GetRange((proceso * 7), proceso)),
-                            () => OnSendParameters(9, list.GetRange((proceso * 8), proceso)),
-                            () => OnSendParameters(10, list.GetRange((proceso * 9), proceso)),
-                            () => OnSendParameters(11, list.GetRange((proceso * 10), proceso)),
-                            () => OnSendParameters(12, list.GetRange((proceso * 11), proceso)),
-                            () => OnSendParameters(13, list.GetRange((proceso * 12), proceso)),
-                            () => OnSendParameters(14, list.GetRange((proceso * 13), proceso)),
-                            () => OnSendParameters(15, list.GetRange((proceso * 14), proceso)),
-                            () => OnSendParameters(16, list.GetRange((proceso * 15), proceso)),
-                            () => OnSendParameters(17, list.GetRange((proceso * 16), proceso)),
-                            () => OnSendParameters(18, list.GetRange((proceso * 17), proceso)),
-                            () => OnSendParameters(19, list.GetRange((proceso * 18), proceso)),
-                            () => OnSendParameters(20, list.GetRange((proceso * 19), list.Count - (proceso * 19)))
+                            () => OnSendParameters(1, list.GetRange((process * 0), process)),
+                            () => OnSendParameters(2, list.GetRange((process * 1), process)),
+                            () => OnSendParameters(3, list.GetRange((process * 2), process)),
+                            () => OnSendParameters(4, list.GetRange((process * 3), process)),
+                            () => OnSendParameters(5, list.GetRange((process * 4), process)),
+                            () => OnSendParameters(6, list.GetRange((process * 5), process)),
+                            () => OnSendParameters(7, list.GetRange((process * 6), process)),
+                            () => OnSendParameters(8, list.GetRange((process * 7), process)),
+                            () => OnSendParameters(9, list.GetRange((process * 8), process)),
+                            () => OnSendParameters(10, list.GetRange((process * 9), process)),
+                            () => OnSendParameters(11, list.GetRange((process * 10), process)),
+                            () => OnSendParameters(12, list.GetRange((process * 11), process)),
+                            () => OnSendParameters(13, list.GetRange((process * 12), process)),
+                            () => OnSendParameters(14, list.GetRange((process * 13), process)),
+                            () => OnSendParameters(15, list.GetRange((process * 14), process)),
+                            () => OnSendParameters(16, list.GetRange((process * 15), process)),
+                            () => OnSendParameters(17, list.GetRange((process * 16), process)),
+                            () => OnSendParameters(18, list.GetRange((process * 17), process)),
+                            () => OnSendParameters(19, list.GetRange((process * 18), process)),
+                            () => OnSendParameters(20, list.GetRange((process * 19), list.Count - (process * 19)))
                         );
                     }
                     break;
