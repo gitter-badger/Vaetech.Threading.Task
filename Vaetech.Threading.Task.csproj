@@ -4,16 +4,10 @@
     <TargetFrameworks>netstandard2.1;net45;net451;net461;net48</TargetFrameworks>
     <Authors>Luis Eduardo Cochachi Chamorro</Authors>
     <Company>Liiksoft</Company>
-    <Description>Help to use class System.Threading.Task.Parallel in .NET
+    <Description>Light Parallel Invocation and Asynchronous Parallel Invocation.
 
-ParallelEx&lt;T&gt;, 
-ParallelEx&lt;T,T1&gt; 
-ParallelEx&lt;T,T1,T2&gt; 
-ParallelEx&lt;T,T1,T2,T3&gt; 
-ParallelEx&lt;T,T1,T2,T3,T4&gt; 
-ParallelEx&lt;T,T1,T2,T3,T4,T5&gt; 
-ParallelEx&lt;T,T1,T2,T3,T4,T5,T6&gt; 
-ParallelEx&lt;T,T1,T2,T3,T4,T5,T6,T7&gt;</Description>
+- ParallelEx.Invoke, ParallelEx.Invoke &lt;T&gt;, ParallelEx.InvokeAsync, ParallelEx.InvokeAsync &lt;T&gt;.
+- ParallelEx&lt;T,...,T7&gt;. EventHandler.</Description>
     <PackageTags>Parallel, ParallelEx</PackageTags>
     <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -21,10 +15,11 @@ ParallelEx&lt;T,T1,T2,T3,T4,T5,T6,T7&gt;</Description>
     <PackageIconUrl />
     <PackageProjectUrl>https://github.com/cochachyLE-Eng/Vaetech.Threading.Task</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cochachyLE-Eng/Vaetech.Threading.Task</RepositoryUrl>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Vaetech.Data.ContentResult" Version="1.5.8" />
+    <PackageReference Include="Vaetech.Data.ContentResult" Version="1.6.6" />
   </ItemGroup>
 
   <ItemGroup>

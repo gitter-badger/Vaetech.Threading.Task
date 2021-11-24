@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vaetech.Data.ContentResult.Events;
+using static Vaetech.Threading.Task.ParallelEx;
 
 namespace Vaetech.Threading.Task
 {
@@ -28,7 +29,7 @@ namespace Vaetech.Threading.Task
         public event DynamicEventHandler<IEnumerable<T>> _dynamicEventHandlerEighteen;
         public event DynamicEventHandler<IEnumerable<T>> _dynamicEventHandlerNineteen;
         public event DynamicEventHandler<IEnumerable<T>> _dynamicEventHandlerTwenty;
-        public void InitParallel(Processors processors, List<T> list)
+        public async void InitParallel(Processors processors, List<T> list)
         {
             if (list == null)
                 return;
@@ -42,9 +43,7 @@ namespace Vaetech.Threading.Task
             {
                 case Processors.One:
                     {
-                        Parallel.Invoke(
-                            () => OnSendParameters(1, list)
-                        );
+                        ParallelEx.Invoke(() => OnSendParameters(1, list));                       
                     }
                     break;
                 case Processors.Two:
@@ -371,7 +370,7 @@ namespace Vaetech.Threading.Task
                     }
                     break;
             }
-        }
+        }        
         private void OnSendParameters(int process, IEnumerable<T> list)
         {
             if (_dynamicEventHandler != null)
@@ -459,7 +458,7 @@ namespace Vaetech.Threading.Task
                     if (_dynamicEventHandlerTwenty != null)
                         _dynamicEventHandlerTwenty(this, new DynamicEventArgs<IEnumerable<T>>(list));
                     break;
-            }
+            }            
         }
     }
 }
