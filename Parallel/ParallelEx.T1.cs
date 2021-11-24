@@ -42,14 +42,14 @@ namespace Vaetech.Threading.Task
             {
                 case Processors.One:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list, item1)
                         );
                     }
                     break;
                 case Processors.Two:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), list.Count - (process * 1)), item1)
                         );
@@ -57,7 +57,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Three:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), list.Count - (process * 2)), item1)
@@ -66,7 +66,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Four:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -76,7 +76,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Five:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -87,7 +87,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Six:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -99,7 +99,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Seven:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -112,7 +112,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Eight:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -126,7 +126,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Nine:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -141,7 +141,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Ten:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -157,7 +157,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Eleven:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -174,7 +174,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Twelve:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -192,7 +192,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Thirteen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -211,7 +211,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Fourteen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -231,7 +231,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Fifteen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -252,7 +252,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Sixteen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -274,7 +274,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Seventeen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -297,7 +297,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Eighteen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -321,7 +321,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Nineteen:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
@@ -346,7 +346,7 @@ namespace Vaetech.Threading.Task
                     break;
                 case Processors.Twenty:
                     {
-                        Parallel.Invoke(
+                        ParallelEx.Invoke(
                             () => OnSendParameters(1, list.GetRange((process * 0), process), item1),
                             () => OnSendParameters(2, list.GetRange((process * 1), process), item1),
                             () => OnSendParameters(3, list.GetRange((process * 2), process), item1),
