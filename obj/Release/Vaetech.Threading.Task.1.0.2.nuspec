@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Vaetech.Threading.Task</id>
+    <version>1.0.2</version>
+    <authors>Luis Eduardo Cochachi Chamorro</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT OR Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/MIT%20OR%20Apache-2.0</licenseUrl>
+    <icon>package.png</icon>
+    <projectUrl>https://github.com/cochachyLE-Eng/Vaetech.Threading.Task</projectUrl>
+    <description>Light Parallel Invocation and Asynchronous Parallel Invocation.
+
+- ParallelEx.Invoke, ParallelEx.Invoke &lt;T&gt;, ParallelEx.InvokeAsync, ParallelEx.InvokeAsync &lt;T&gt;.
+- ParallelEx&lt;T,...,T7&gt;. EventHandler.</description>
+    <tags>Parallel, ParallelEx</tags>
+    <repository url="https://github.com/cochachyLE-Eng/Vaetech.Threading.Task" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Vaetech.Data.ContentResult" version="1.6.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="Vaetech.Data.ContentResult" version="1.6.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Vaetech.Data.ContentResult" version="1.6.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="Vaetech.Data.ContentResult" version="1.6.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Vaetech.Data.ContentResult" version="1.6.6" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\01 - DOCUMENTOS CLIENTES\00 - Nuget Private\Proyects\Vaetech.Threading.Task\Vaetech.Threading.Task\bin\Release\net45\Vaetech.Threading.Task.dll" target="lib\net45\Vaetech.Threading.Task.dll" />
+    <file src="D:\01 - DOCUMENTOS CLIENTES\00 - Nuget Private\Proyects\Vaetech.Threading.Task\Vaetech.Threading.Task\bin\Release\net451\Vaetech.Threading.Task.dll" target="lib\net451\Vaetech.Threading.Task.dll" />
+    <file src="D:\01 - DOCUMENTOS CLIENTES\00 - Nuget Private\Proyects\Vaetech.Threading.Task\Vaetech.Threading.Task\bin\Release\net461\Vaetech.Threading.Task.dll" target="lib\net461\Vaetech.Threading.Task.dll" />
+    <file src="D:\01 - DOCUMENTOS CLIENTES\00 - Nuget Private\Proyects\Vaetech.Threading.Task\Vaetech.Threading.Task\bin\Release\net48\Vaetech.Threading.Task.dll" target="lib\net48\Vaetech.Threading.Task.dll" />
+    <file src="D:\01 - DOCUMENTOS CLIENTES\00 - Nuget Private\Proyects\Vaetech.Threading.Task\Vaetech.Threading.Task\bin\Release\netstandard2.1\Vaetech.Threading.Task.dll" target="lib\netstandard2.1\Vaetech.Threading.Task.dll" />
+    <file src="D:\01 - DOCUMENTOS CLIENTES\00 - Nuget Private\icons\package.png" target="package.png" />
+  </files>
+</package>

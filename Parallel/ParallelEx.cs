@@ -171,5 +171,22 @@ namespace Vaetech.Threading.Task
                 return new ActionResult<T>(default(T), true, ex.Message);
             }
         }
-    }
+
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
+        public static async Tasks.Task RunAsync<T>(Func<Tasks.Task<ActionResult<T>>> action, Action<ActionResult<T>> result) where T: class
+            => await RunAsync<T, Exception>(action, result);
+        public static async Tasks.Task RunAsync<T, TException>(Func<Tasks.Task<ActionResult<T>>> action, Action<ActionResult<T>> result)
+            where TException : Exception
+            where T : class
+        {
+            try
+            {
+                result(await action());
+            }
+            catch (TException ex)
+            {
+                result(new ActionResult<T>(default(T), true, ex.Message));
+            }
+        }               
+    }    
 }

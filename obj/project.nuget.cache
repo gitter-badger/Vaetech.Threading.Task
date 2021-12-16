@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7a7SL5dAy1Ky+sOTQqRaggSUqMswjXjLKLghLYGbJUcaLrLoSLDsTDDhf1SocSyBpdRgfsqfO6tZ/lB/RweGvg==",
+  "success": true,
+  "projectFilePath": "D:\\01 - DOCUMENTOS CLIENTES\\00 - Nuget Private\\Proyects\\Vaetech.Threading.Task\\Vaetech.Threading.Task\\Vaetech.Threading.Task.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\vaetech.data.contentresult\\1.6.6\\vaetech.data.contentresult.1.6.6.nupkg.sha512"
+  ],
+  "logs": []
+}
